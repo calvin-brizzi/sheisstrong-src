@@ -1,0 +1,321 @@
+# Site settings
+baseurl = "http://sheisstrong.org"
+languageCode = "en-us"
+title = "She is Strong"
+theme = "hugo-agency-theme"
+
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = ""
+
+[params]
+  # You can use Markdown syntax for urls [text](//url.to/source) or
+  # most longer texts.
+  #
+  # All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+  # for more icons. The icons are represented by their corresponding
+  # CSS class.
+
+  # To provide some metadata for search engines feel free to add a few
+  # information about you and your website.
+  name = "She is Strong"
+  description = "Providing women with the opportunity for education, experience, and success."
+
+  # Link custom assets relative to /static
+  custom_css = []
+  custom_js  = []
+  favicon    = "favicon.ico"
+
+  # Possibility to disable external/additional fonts
+  # Exception: Fontawesome
+  disableFonts = false
+
+  # 404 error customization
+  [params.error404]
+    heading = "Page couldn't be found"
+    text = "Please visit [this page](/)"
+
+  # Optional piwik tracking
+  #[params.analytics.piwik]
+  #  URL = "https://stats.example.com"
+  #  ID = "42"
+  #  # Track all subdomains with "*.example.com"
+  #  domain = "www.example.com"
+  #  # Optional integrity check hash
+  #  hash = "sha512-RfeD0pacGTqy9m7U6PgehQfS4cc7SIt+e+P+H5e848kEvB/RW84CUGO3O4O3LNbxjevym6KPUZ8muPsMrI8WIw=="
+
+  # Navigation
+  [params.navigation]
+    brand = "She is Strong"
+    # Optional logo as brand stored in img/
+    # logo = "logo.jpg"
+    services = "Mission"
+    portfolio = "News"
+    about = "About"
+    team = "Team"
+    contact = "Contact"
+
+    # Add custom links. Those can be pre- and postpended to the default menu above.
+    # Use the weight attribute to order your custom links. Uncomment the example
+    # below and replace the values with your own.
+
+    # prepended links
+    #[[menu.prepend]]
+    #  url = "http://gohugo.io"
+    #  name = "Hugo"
+    #  weight = 10
+
+    # postpended links
+    [[menu.postpend]]
+      url = "https://www.facebook.com/sheisstrongcpt/"
+      name = "Facebook Page"
+      weight = 10
+
+
+  # Hero section
+  [params.hero]
+    # To change the background image of the hero, replace 'header-bg.jpg' in
+    # the 'static/img' folder.
+    title = "Providing women with the opportunity for education, experience, and success."
+    subtitle = ""
+    buttonText = "Tell me more"
+
+
+  # Services section
+  [params.services]
+    enable = true
+    title = "About She is Strong"
+    subtitle = "She is Strong is a small organisation dedicated to empowering and providing aid to all women. <br> We are currently an independent campaign organisation with plans to become a registered NPO in the near future. At the moment, we are working with existing charities, helping to promote their cause. <br> Currently we are partnering with [Emasithandane](http://www.emasithandane.org.za/), a children's shelter located in Nyanga, Western Cape, South Africa."
+
+    [[params.services.row]]
+
+    [[params.services.row.list]]
+      icon = "fa-heart"
+      title = "For the Girls"
+      description = "We are currently promoting Emasithandane Children’s Shelter, and their need for sanitary napkins and health education.<br> All donations to this campaign will go directly to the shelter to help pay for female hygiene products.<br> Donate on [GofundMe](https://www.gofundme.com/childrens-shelter-event) or via PayPal to [femmforall@gmail.com](mailto:femmforall@gmail.com)."
+      url = "#"
+
+    #[[params.services.row.list]]
+    #  icon = "fa-laptop"
+    #  title = "Responsive Design"
+    #  description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+    #  url = "#"
+
+    #[[params.services.row.list]]
+    #  icon = "fa-lock"
+    #  title = "Web"
+    # description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+    #  url = "#"
+
+  # Portfolio section
+  [params.portfolio]
+    enable = false
+    # All projects defined in their own files. You can find example projects
+    # at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
+    # at the root of this Hugo site.
+    # For more informtion take a look at the README.
+    title = "News"
+    subtitle = "Our [facebook page](https://www.facebook.com/sheisstrongcpt/) has the most up to date information, but below are some upcoming and past events (click for more details)."
+
+    [params.portfolio.modal]
+      client = "Client"
+      date = "Date"
+      category = "Category"
+      buttonText = "Close project"
+
+
+    # About section
+  [params.about]
+    enable = false
+    title = "About"
+    subtitle = "Lorem ipsum dolor sit amet consectetur."
+    endpoint = "Be part<br>of our<br>story!"
+
+    # The events will be listed from the top to the bottom.
+    # All images are stored under 'static/img/about'.
+    # Replace them with your own.
+    [[params.about.events]]
+      img = "1.jpg"
+      date = "2009-2011"
+      title = "Our Humble Beginnings"
+      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+
+    [[params.about.events]]
+      img = "2.jpg"
+      date = "March 2011"
+      title = "An Agency is Born"
+      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+
+    [[params.about.events]]
+      img = "3.jpg"
+      date = "December 2012"
+      title = "Our Humble Beginnings"
+      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+
+    [[params.about.events]]
+      img = "4.jpg"
+      date = "July 2014"
+      title = "Phase Two Expansion"
+      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+
+
+  # Team section
+  [params.team]
+    enable = true
+    # Possibility to center items
+    #center = true
+    title = "Our amazing team"
+    subtitle = ""
+    description = ""
+
+    # All team member's pictures are stored under 'static/img/team'.
+    # Replace them with your own too.
+    # Suggestion: Image size should be at least 360px*360px or the alignment might be affected.
+    [[params.team.members]]
+      img = "stephanie.png"
+      name = "Stephanie Konczal"
+      position = "Director of Impact"
+      #reportsTo = "CTO"
+      #livesIn = "[Munich, Germany](#some-maps-url)"
+      #scope = [
+      #  "UX for [member dashboard](#)",
+      #  "Maintainer for [awesome-project](#)",
+      #  "Open Source [community management](#)"
+      #]
+      # For bio markdown and even multiline strings are available.
+      bio = """Stephanie is a final year student at The Ohio State University in Columbus, Ohio. She hopes to pursue a Masters in Public Health and work with US veterans as her primary population. Stephanie works at a YMCA in central Ohio where she has the joy of promoting well-being and a healthy lifestyle in her community. What started as a campaign initiative on behalf of a children’s shelter in Nyanga, South Africa has led to her creating She is Strong."""
+      #social = [
+      #  ["fa-twitter", "#"],
+      #  ["fa-facebook", "#"],
+      #  ["fa-linkedin", "#"]
+      #]
+
+    [[params.team.members]]
+      img = "maddy.png"
+      name = "Maddy Bazil"
+      position = "Marketing Director"
+      #social = [
+      #  ["fa-twitter", "#"],
+      #  ["fa-facebook", "#"],
+      #  ["fa-linkedin", "#"]
+      #]
+      bio = """Maddy is a photographer and writer based between Cape Town, Washington DC, and Scotland. She is keenly interested in storytelling and activism which engage with human rights and feminism. Her documentary photography and writing have been published at Musée Magazine, Private International Photo Review, Matador Network, the Culture Trip, and elsewhere. She is a final year undergraduate student of English at University of St Andrews with an ultimate eye on a career in global media/photojournalism and NGO work."""
+
+    [[params.team.members]]
+      img = "jessica.png"
+      name = "Jessica Baron"
+      position = "Director of Development"
+      #social = [
+      #  ["fa-twitter", "#"],
+      #  ["fa-facebook", "#"],
+      #  ["fa-linkedin", "#"]
+      #]
+      bio = """Jessica is a third-year student at Boston University, studying international relations and psychology, on a pre-law track. Throughout her time at university, she has worked with many organisations, all fighting injustice, oppression, and inequality. She has independently filmed two documentaries that have both been recognised by her university. For Jessica, female empowerment is an issue that desperately needs to be addressed, globally.; her goal is to live in a world where every country offers the same rights and liberties to every person."""
+
+  # Client section
+    [params.clients_list]
+      enable = false
+      # Possibility to center items
+      #center = true
+      # Optional client title specifying the involvement
+      #title = "Used and trusted by"
+
+      # All the clients' logos are stored under 'static/img/logos'.
+      # Replace them with your clients's logos.
+      # Suggestion: .svg in the size of 280px*80px looks good
+      [[params.clients]]
+        logo = "envato.jpg"
+        link = "#"
+
+      [[params.clients]]
+        logo = "designmodo.jpg"
+        link = "#"
+
+      [[params.clients]]
+        logo = "themeforest.jpg"
+        link = "#"
+
+      [[params.clients]]
+        logo = "creative-market.jpg"
+        link = "#"
+
+  # Contact section
+  [params.contact]
+    enable = true
+    title = "Contact us"
+    subtitle  = "Use the form below, reach out on [facebook](https://www.facebook.com/sheisstrongcpt/) or [email us](mailto:femmforall@gmail.com)"
+    buttonText = "Send message"
+
+    # Since this template is static, the contact form uses www.formspree.io as a
+    # proxy. The form makes a POST request to their servers to send the actual
+    # email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+
+    # It is possible to substitute formspring with other providers
+    # as an example the mailout plugin from caddy.
+    # Provide the post URL for the form and depending on the provider
+    # add some custom JS script to finish the implementation.
+    # postURL = "https://example.com/mailout/"
+
+    email = "femmforall@gmail.com"
+
+    # Success and error message overwrite for async contact form
+    #thanks = "Thank you for awesomely contacting us."
+    #error = "Message could not be sent. Please contact us at femmforall@gmail.com instead."
+
+    # 'warning' defines error messages for invalid inputs
+    [params.contact.form.name]
+      text = "Your Name *"
+      warning = "Please enter your name."
+
+    [params.contact.form.email]
+      text = "Your Email *"
+      warning = "Please enter your email address."
+
+    [params.contact.form.phone]
+      text = "Your Phone *"
+      warning = "Please enter your phone number."
+
+    [params.contact.form.message]
+      text = "Your Message *"
+      warning = "Please enter a message."
+
+      # Add optional form fields to identify contact forms
+      #[[params.contact.form.hidden]]
+      #  name = "someID"
+      #  value = "example.com"
+      #
+      #[[params.contact.form.hidden]]
+      # Special values for name such as "page" and "site" will be autofilled
+      #  name = "page"
+
+  # Footer section
+  [params.footer]
+    enable = true
+    copyright = "Published under the Apache License 2.0."
+
+    #[[params.footer.social]]
+    #  icon = "fa-twitter"
+    #  link = "#"
+
+    [[params.footer.social]]
+      icon = "fa-facebook"
+      link = "#"
+
+    #[[params.footer.social]]
+    #  icon = "fa-linkedin"
+    #  link = "#"
+
+    #[[params.footer.quicklinks]]
+    #  text = "Privacy Policy"
+    #  link = "#"
+
+    #[[params.footer.quicklinks]]
+    #  text = "Terms of Use"
+    #  link = "#"
